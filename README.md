@@ -6,6 +6,13 @@ The spread of misinformation online is a growing challenge that influences publi
 The project covers the full ML pipeline — from raw data ingestion and text preprocessing through feature engineering, model training, evaluation, and a deployable prediction system.
 
 
+## Live Demo
+
+Try the deployed Streamlit app here:
+
+https://your-app-name.streamlit.app
+
+
 ## Objectives
 
 - Build a binary text classifier to detect fake vs. real news articles
