@@ -8,8 +8,17 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.join(BASE_DIR, "models", "fake_news_model.pkl")
 vectorizer_path = os.path.join(BASE_DIR, "models", "vectorizer.pkl")
 
-model = joblib.load(model_path)
-vectorizer = joblib.load(vectorizer_path)
+# model = joblib.load(model_path)
+# vectorizer = joblib.load(vectorizer_path)
+
+@st.cache_resource
+def load_models():
+    model = joblib.load(model_path)
+    vectorizer = joblib.load(vectorizer_path)
+    return model, vectorizer
+
+
+model, vectorizer = load_models()
 
 # TEXT PREPROCESSING
 def preprocess(text):
