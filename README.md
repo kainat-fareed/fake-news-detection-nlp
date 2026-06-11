@@ -10,7 +10,7 @@ The project covers the full ML pipeline — from raw data ingestion and text pre
 
 Try the deployed Streamlit app here:
 
-[https://your-app-name.streamlit.app](https://fake-news-detection-nlp-project.streamlit.app/)
+(https://fake-news-detection-nlp-project.streamlit.app/)
 
 
 ## Objectives
